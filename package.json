@@ -1,0 +1,32 @@
+{
+  "name": "ajs-homework-3-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vestanu/ajs-homework-3-3.git"
+  },
+  "author": "Vestanu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vestanu/ajs-homework-3-3/issues"
+  },
+  "homepage": "https://github.com/Vestanu/ajs-homework-3-3#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-jest": "^25.4.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.4.0",
+    "nock": "^12.0.3"
+  },
+  "dependencies": {
+    "mock-http-server": "^1.4.2"
+  }
+}
