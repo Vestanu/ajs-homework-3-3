@@ -28,3 +28,17 @@ beforeEach(() => {
     getLevel ()
     expect(fetchData).toBeCalledWith("https://server/user/undefined");
   }  )
+
+  test("показывает статус", () => {
+    fetchData.mockReturnValue({status: "ok", level: 10});
+    const answer = getLevel (150)
+    
+    expect(answer).toBe("Ваш текущий уровень: 10");
+  }  )
+
+  test("показывает статус", () => {
+    fetchData.mockReturnValue({status: "not ok", level: 10});
+    const answer = getLevel (150)
+    
+    expect(answer).toBe("Информация об уровне временно недоступна");
+  }  )
